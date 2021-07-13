@@ -8,7 +8,7 @@ module "libvirt-cluster" {
   source = "git::http://github.com:mictram/libvirt-cluster.git"
   node_pool_vm_image_url = "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64.img"
   node_pool_size = 2
-  node_pool_vm_vcpu = 1
+  node_pool_vm_vcpu = 2
   node_pool_vm_memory = 4000 # 4Gib
   node_pool_vm_volume_size = 21474836480 # 20GiB
   node_pool_vm_name = "primary"
@@ -31,7 +31,7 @@ module "libvirt-cluster_dev" {
   source = "git::http://github.com:mictram/libvirt-cluster.git"
   node_pool_vm_image_url = "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64.img"
   node_pool_size = 2
-  node_pool_vm_vcpu = 1
+  node_pool_vm_vcpu = 2
   node_pool_vm_memory = 4000 # 4Gib
   node_pool_vm_volume_size = 21474836480 # 20GiB
   node_pool_vm_name = "dev"
@@ -43,7 +43,7 @@ module "libvirt-cluster_prod" {
   source = "git::http://github.com:mictram/libvirt-cluster.git"
   node_pool_vm_image_url = "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64.img"
   node_pool_size = 2
-  node_pool_vm_vcpu = 1
+  node_pool_vm_vcpu = 2
   node_pool_vm_memory = 4000 # 4Gib
   node_pool_vm_volume_size = 21474836480 # 20GiB
   node_pool_vm_name = "prod"
