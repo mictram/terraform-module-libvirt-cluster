@@ -37,6 +37,7 @@ module "libvirt-cluster_dev" {
   node_pool_vm_name = "dev"
   libvirt_uri = "qemu:///system"
   ssh_pub_key_path = "~/.ssh/id_rsa.pub"
+  libvirt_pool_path = "/mnt/libvirt_pool/libvirt-cluster_dev"
 }
 
 module "libvirt-cluster_prod" {
@@ -49,6 +50,7 @@ module "libvirt-cluster_prod" {
   node_pool_vm_name = "prod"
   libvirt_uri = "qemu:///system"
   ssh_pub_key_path = "~/.ssh/id_rsa.pub"
+  libvirt_pool_path = "/mnt/libvirt_pool/libvirt-cluster_prod"
 }
 ```
 
@@ -63,3 +65,4 @@ module "libvirt-cluster_prod" {
 | `node_pool_vm_name` | name (namespace) of each vm in the cluster |
 | `libvirt_uri` | uri of the libvirt daemon |
 | `ssh_pub_key_path` | local path to ssh public key to add to ~/.ssh/authorized_keys in each vm |
+| `libvirt_pool_path` | path on remote path to libvirt pool directory |
