@@ -6,3 +6,4 @@ variable "node_pool_vm_volume_size" {}
 variable "node_pool_vm_name" {}
 variable "libvirt_uri" {}
 variable "ssh_pub_key_path" {}
+variable "libvirt_pool_path" {}

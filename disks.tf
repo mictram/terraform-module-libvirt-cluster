@@ -1,7 +1,7 @@
 resource "libvirt_pool" "default" {
   name = "${var.node_pool_vm_name}"
   type = "dir"
-  path = "/tmp/terraform-libvirt_pool-${var.node_pool_vm_name}"
+  path = var.libvirt_pool_path
 }
 
 # for more info about paramater check this out
