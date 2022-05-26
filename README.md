@@ -1,6 +1,10 @@
 # libvirt-cluster (WIP)
+Terraform module that creates a specified number of local VMs using a
+Terraform Libvirt provider.
 
-## example usage
+Relies upon https://registry.terraform.io/providers/dmacvicar/libvirt/latest/docs
+
+## Example usage
 Create a file `main.tf`
 
 ```
@@ -24,7 +28,7 @@ terraform plan
 terraform apply
 ```
 
-## multiple clusters
+## Create multiple clusters
 To create multiple clusters, create multiple module blocks in `main.tf` like so:
 ```
 module "libvirt-cluster_dev" {
